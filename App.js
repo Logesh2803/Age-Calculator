@@ -17,8 +17,8 @@ const App = createStackNavigator({
   HomeScreen: {
     screen: HomeScreen,
     navigationOptions: {
-      title: 'HomeScreen',
-      headerStyle: { backgroundColor: '#3a59b7' },
+      title: 'Home Screen',
+      headerStyle: { backgroundColor: '#328DFF' },
       headerTintColor: '#ffffff',
     },
   },
@@ -27,7 +27,7 @@ const App = createStackNavigator({
     screen: ViewAllUser,
     navigationOptions: {
       title: 'View All User',
-      headerStyle: { backgroundColor: '#3a59b7' },
+      headerStyle: { backgroundColor: '#328DFF' },
       headerTintColor: '#ffffff',
     },
   },
@@ -35,7 +35,7 @@ const App = createStackNavigator({
     screen: UpdateUser,
     navigationOptions: {
       title: 'Update User',
-      headerStyle: { backgroundColor: '#3a59b7' },
+      headerStyle: { backgroundColor: '#328DFF' },
       headerTintColor: '#ffffff',
     },
   },
@@ -43,7 +43,7 @@ const App = createStackNavigator({
     screen: RegisterUser,
     navigationOptions: {
       title: 'Register User',
-      headerStyle: { backgroundColor: '#3a59b7' },
+      headerStyle: { backgroundColor: '#328DFF' },
       headerTintColor: '#ffffff',
     },
   },
@@ -51,7 +51,7 @@ const App = createStackNavigator({
     screen: DeleteUser,
     navigationOptions: {
       title: 'Delete User',
-      headerStyle: { backgroundColor: '#3a59b7' },
+      headerStyle: { backgroundColor: '#328DFF' },
       headerTintColor: '#ffffff',
     },
   },

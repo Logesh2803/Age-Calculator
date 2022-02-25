@@ -12,7 +12,7 @@ export default class RegisterUser extends React.Component {
     this.state = {
       user_name: '',
       user_contact: '',
-      user_address: '',
+      user_: '',
     };
     realm = new Realm({ path: 'UserDatabase.realm' });
   }
@@ -66,8 +66,9 @@ export default class RegisterUser extends React.Component {
         <ScrollView keyboardShouldPersistTaps="handled">
           <KeyboardAvoidingView
             behavior="padding"
-            style={{ flex: 1, justifyContent: 'space-between' }}>
+            style={{ flex: 1, justifyContent: 'space-between',paddingVertical:100}}>
             <Mytextinput
+          
               placeholder="Enter Name"
               onChangeText={user_name => this.setState({ user_name })}
             />
@@ -78,11 +79,8 @@ export default class RegisterUser extends React.Component {
               keyboardType="numeric"
             />
             <Mytextinput
-              placeholder="Enter Address"
+              placeholder="Enter E-mail "
               onChangeText={user_address => this.setState({ user_address })}
-              maxLength={225}
-              numberOfLines={4}
-              multiline={true}
               style={{ textAlignVertical: 'top' }}
             />
             <Mybutton

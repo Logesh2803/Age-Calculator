@@ -2,7 +2,6 @@
 import React from 'react';
 import {
   View,
-  YellowBox,
   ScrollView,
   KeyboardAvoidingView,
   Alert,
@@ -110,7 +109,7 @@ export default class UpdateUser extends React.Component {
         <ScrollView keyboardShouldPersistTaps="handled">
           <KeyboardAvoidingView
             behavior="padding"
-            style={{ flex: 1, justifyContent: 'space-between' }}>
+            style={{ flex: 1, justifyContent: 'space-between',paddingVertical:40 }}>
             <Mytextinput
               placeholder="Enter User Id"
               onChangeText={input_user_id => this.setState({ input_user_id })}
@@ -133,11 +132,8 @@ export default class UpdateUser extends React.Component {
             />
             <Mytextinput
               value={this.state.user_address}
-              placeholder="Enter Address"
+              placeholder="Enter E-mail"
               onChangeText={user_address => this.setState({ user_address })}
-              maxLength={225}
-              numberOfLines={5}
-              multiline={true}
               style={{ textAlignVertical: 'top' }}
             />
             <Mybutton

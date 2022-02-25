@@ -18,7 +18,7 @@ export default class ViewAllUser extends React.Component {
   }
   ListViewItemSeparator = () => {
     return (
-      <View style={{ height: 0.5, width: '100%', backgroundColor: '#000' }} />
+      <View style={{ height: 0.5, width: '100%',borderBottomWidth:2}} />
     );
   };
   render() {
@@ -26,14 +26,15 @@ export default class ViewAllUser extends React.Component {
       <View>
         <FlatList
           data={this.state.FlatListItems}
+          style={{}}
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
-            <View style={{ backgroundColor: 'white', padding: 20 }}>
-              <Text>Id: {item.user_id}</Text>
-              <Text>Name: {item.user_name}</Text>
-              <Text>Contact: {item.user_contact}</Text>
-              <Text>Address: {item.user_address}</Text>
+            <View style={{ backgroundColor: '#161A20', paddingVertical:20}}>
+              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Id: {item.user_id}</Text>
+              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Name: {item.user_name}</Text>
+              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Contact: {item.user_contact}</Text>
+              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Address: {item.user_address}</Text>
             </View>
           )}
         />

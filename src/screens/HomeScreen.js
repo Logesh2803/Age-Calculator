@@ -32,8 +32,9 @@ export default class HomeScreen extends React.Component {
           flex: 1,
           backgroundColor: 'white',
           flexDirection: 'column',
+          paddingVertical:80
         }}>
-        <Mytext text="RealM Example" />
+        <Mytext text="Realm" />
         <Mybutton
           title="Register"
           customClick={() => this.props.navigation.navigate('Register')}

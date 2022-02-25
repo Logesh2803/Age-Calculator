@@ -10,20 +10,21 @@ const Mytextinput = props => {
         marginTop: 20,
         borderColor: '#007FFF',
         borderWidth: 1,
+        
       }}>
       <TextInput
         underlineColorAndroid="transparent"
         placeholder={props.placeholder}
-        placeholderTextColor="#000000"
+        placeholderTextColor="#6C727B"
         keyboardType={props.keyboardType}
         onChangeText={props.onChangeText}
         returnKeyType={props.returnKeyType}
         numberOfLines={props.numberOfLines}
-        multiline={props.multiline}
         onSubmitEditing={props.onSubmitEditing}
         style={props.style}
         blurOnSubmit={false}
         value={props.value}
+       
       />
     </View>
   );
