@@ -18,7 +18,7 @@ export default class ViewAllUser extends React.Component {
   }
   ListViewItemSeparator = () => {
     return (
-      <View style={{ height: 0.5, width: '100%',borderBottomWidth:2}} />
+      <View style={{ height: 0.5, width: '100%', borderBottomWidth: 2 }} />
     );
   };
   render() {
@@ -30,11 +30,11 @@ export default class ViewAllUser extends React.Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
-            <View style={{ backgroundColor: '#161A20', paddingVertical:20}}>
-              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Id: {item.user_id}</Text>
-              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Name: {item.user_name}</Text>
-              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Contact: {item.user_contact}</Text>
-              <Text style={{textAlign:'center',fontSize:20,fontWeight:'600',color:'#FFFFFF'}}>Address: {item.user_address}</Text>
+            <View style={{ backgroundColor: '#161A20', paddingVertical: 20 }}>
+              <Text style={{ textAlign: 'center', fontSize: 20, fontWeight: '600', color: '#FFFFFF' }}>Id: {item.user_id}</Text>
+              <Text style={{ textAlign: 'center', fontSize: 20, fontWeight: '600', color: '#FFFFFF' }}>Name: {item.user_name}</Text>
+              <Text style={{ textAlign: 'center', fontSize: 20, fontWeight: '600', color: '#FFFFFF' }}>Contact: {item.user_contact}</Text>
+              <Text style={{ textAlign: 'center', fontSize: 20, fontWeight: '600', color: '#FFFFFF' }}>Address: {item.user_address}</Text>
             </View>
           )}
         />

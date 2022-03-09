@@ -45,9 +45,9 @@ export default class UpdateUser extends React.Component {
   };
   render() {
     return (
-      <View style={{ backgroundColor: 'white', flex: 1,paddingVertical:180 }}>
+      <View style={{ backgroundColor: 'white', flex: 1, paddingVertical: 180 }}>
         <Mytextinput
-        
+
           placeholder="Enter User Id"
           onChangeText={input_user_id => this.setState({ input_user_id })}
         />

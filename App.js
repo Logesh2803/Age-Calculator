@@ -3,7 +3,7 @@ import React from 'react';
 
 //Import react-navigation
 import { createAppContainer } from 'react-navigation';
-import { createStackNavigator} from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 
 //Import external files
 import HomeScreen from './src/screens/HomeScreen';
@@ -22,7 +22,7 @@ const App = createStackNavigator({
       headerTintColor: '#ffffff',
     },
   },
-  
+
   ViewAll: {
     screen: ViewAllUser,
     navigationOptions: {

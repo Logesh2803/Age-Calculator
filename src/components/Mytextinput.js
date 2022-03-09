@@ -10,7 +10,7 @@ const Mytextinput = props => {
         marginTop: 20,
         borderColor: '#007FFF',
         borderWidth: 1,
-        
+
       }}>
       <TextInput
         underlineColorAndroid="transparent"
@@ -24,7 +24,7 @@ const Mytextinput = props => {
         style={props.style}
         blurOnSubmit={false}
         value={props.value}
-       
+
       />
     </View>
   );

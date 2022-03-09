@@ -32,7 +32,7 @@ export default class HomeScreen extends React.Component {
           flex: 1,
           backgroundColor: 'white',
           flexDirection: 'column',
-          paddingVertical:80
+          paddingVertical: 80
         }}>
         <Mytext text="Realm" />
         <Mybutton
@@ -43,7 +43,7 @@ export default class HomeScreen extends React.Component {
           title="Update"
           customClick={() => this.props.navigation.navigate('Update')}
         />
-      
+
         <Mybutton
           title="View All"
           customClick={() => this.props.navigation.navigate('ViewAll')}

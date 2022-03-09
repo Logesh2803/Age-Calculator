@@ -29,7 +29,7 @@ export default class RegisterUser extends React.Component {
             var ID =
               realm.objects('user_details').sorted('user_id', true).length > 0
                 ? realm.objects('user_details').sorted('user_id', true)[0]
-                    .user_id + 1
+                  .user_id + 1
                 : 1;
             realm.create('user_details', {
               user_id: ID,
@@ -66,9 +66,9 @@ export default class RegisterUser extends React.Component {
         <ScrollView keyboardShouldPersistTaps="handled">
           <KeyboardAvoidingView
             behavior="padding"
-            style={{ flex: 1, justifyContent: 'space-between',paddingVertical:100}}>
+            style={{ flex: 1, justifyContent: 'space-between', paddingVertical: 100 }}>
             <Mytextinput
-          
+
               placeholder="Enter Name"
               onChangeText={user_name => this.setState({ user_name })}
             />

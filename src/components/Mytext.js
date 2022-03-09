@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     marginTop: 16,
     marginLeft: 35,
     marginRight: 35,
-    fontWeight:'600',
-    textAlign:'center'
+    fontWeight: '600',
+    textAlign: 'center'
   },
 });
 export default Mytext;
